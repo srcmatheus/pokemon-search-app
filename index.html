@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgs/pokebola.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>PokeDex</title>
+</head>
+<body>
+    
+    <main id="background-content">
+        <nav id="nav-bar">
+            <img id="logo" src="./assets/imgs/pokemonlogo.svg" alt="Pokemon Logo">
+            <input id="search" placeholder="Digite o nome do pokemon...">
+            <div id="buttons">
+                <button id="send" onclick="searchPokemon(1)">PESQUISAR POKEMON</button>
+                <button id="random" onclick="searchPokemon(2)">POKEMON ALEATÓRIO</button>
+            </div>
+        </nav>
+
+        <section id="section" style="display: none;">
+
+            <div id="stats">
+                <div id="screen">
+                    <img width="96px" id="pokemonImage" src="">
+                    <h2 id="name"></h2>
+                    <p id="type"></p>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                    <p id="abilities"></p>
+                    <h2 style="margin-top: 10px;">Estatisticas</h2>
+                    <p id="life"></p>
+                    <div class="bar"><div class="after"></div></div>
+                    <p id="attack"></p>
+                    <div class="bar"><div class="after"></div></div>
+                    <p id="defense"></p>
+                    <div class="bar"><div class="after"></div></div>
+                    <p id="special-attack"></p>
+                    <div class="bar"><div class="after"></div></div>
+                    <p id="special-defense"></p>
+                    <div class="bar"><div class="after"></div></div>
+                    <p id="speed"></p>
+                    <div class="bar"><div class="after"></div></div>
+                </div>
+            </div>
+
+            <div id="pokemon">
+                <img width="100%" id="pokemonImageFull" src="">
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="assets/main.js"></script>
+
+</body>
+</html>
